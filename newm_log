@@ -1,0 +1,1029 @@
+newm python - args are ['/home/ahmad/.local/bin/.start-newm', '-d']
+[INFO] config.py:73 2022-05-24 05:04:30: Loading config at /home/ahmad/.config/newm/config.py
+Device '*::kbd_backlight' not found.
+[ERROR] backlight_manager.py:27 2022-05-24 05:04:30: Disabling BacklightManager
+Traceback (most recent call last):
+  File "/home/ahmad/.local/lib/python3.10/site-packages/newm-0.3-py3.10.egg/newm/helper/backlight_manager.py", line 24, in __init__
+    self._current = self._get_current()
+  File "/home/ahmad/.local/lib/python3.10/site-packages/newm-0.3-py3.10.egg/newm/helper/backlight_manager.py", line 99, in _get_current
+    return int(execute("brightnessctl %s g" % self._args))
+ValueError: invalid literal for int() with base 10: ''
+[DEBUG] pywm.py:188 2022-05-24 05:04:30: PyWM init
+[DEBUG] pywm.py:466 2022-05-24 05:04:30: PyWM run
+00:00:00.021 [INFO] [libseat] [libseat/backend/seatd.c:79] Could not connect to socket /run/seatd.sock: No such file or directory
+00:00:00.021 [INFO] [libseat] [libseat/libseat.c:76] Backend 'seatd' failed to open seat, skipping
+00:00:00.077 [INFO] [libseat] [libseat/libseat.c:73] Seat opened with backend 'logind'
+00:00:00.077 [INFO] [backend/session/session.c:110] Successfully loaded libseat session
+00:00:00.086 [INFO] [backend/backend.c:220] Found 1 GPUs
+00:00:00.086 [INFO] [backend/drm/backend.c:183] Initializing DRM backend for /dev/dri/card0 (i915)
+00:00:00.086 [DEBUG] [backend/drm/drm.c:85] Using atomic DRM interface
+00:00:00.086 [DEBUG] [backend/drm/drm.c:98] ADDFB2 modifiers supported
+00:00:00.086 [INFO] [backend/drm/drm.c:251] Found 2 DRM CRTCs
+00:00:00.086 [INFO] [backend/drm/drm.c:178] Found 6 DRM planes
+00:00:00.225 [INFO] [render/egl.c:180] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_platform_x11 EGL_MESA_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
+00:00:00.228 [DEBUG] [render/egl.c:437] Using EGL device /dev/dri/card0
+00:00:03.236 [INFO] [render/egl.c:326] Using EGL 1.5
+00:00:03.236 [INFO] [render/egl.c:327] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_IMG_context_priority EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display 
+00:00:03.236 [INFO] [render/egl.c:329] Supported EGL device extensions: EGL_EXT_device_drm EGL_EXT_device_drm_render_node
+00:00:03.236 [INFO] [render/egl.c:331] EGL vendor: Mesa Project
+00:00:03.236 [DEBUG] [render/egl.c:158] Supported DMA-BUF formats: AB4H XB4H AR30 XR30 AB30 AR24 AB24 XR24 XB24 AR15 RG16 R8   R16  GR88 GR32 YUV9 YU11 YU12 YU16 YU24 YVU9 YV11 YV12 YV16 YV24 NV12 P010 P012 P016 NV16 AYUV XYUV Y410 Y412 Y416 YUYV UYVY Y210 Y212 Y216 
+00:00:03.236 [DEBUG] [render/egl.c:159] EGL DMA-BUF format modifiers supported
+00:00:03.339 [DEBUG] [render/egl.c:388] Obtained high priority context
+00:00:03.340 [DEBUG] [render/egl.c:485] Using EGL_PLATFORM_DEVICE_EXT
+00:00:03.365 [INFO] [render/gles2/renderer.c:737] Creating GLES2 renderer
+00:00:03.365 [INFO] [render/gles2/renderer.c:738] Using OpenGL ES 3.0 Mesa 22.0.3
+00:00:03.365 [INFO] [render/gles2/renderer.c:739] GL vendor: Intel
+00:00:03.365 [INFO] [render/gles2/renderer.c:740] GL renderer: Mesa Intel(R) HD Graphics 3000 (SNB GT2)
+00:00:03.365 [INFO] [render/gles2/renderer.c:741] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_group_vote GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_texture_border_clamp GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_texture_border_clamp GL_EXT_blend_func_extended GL_EXT_float_blend GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_clip_control GL_EXT_color_buffer_half_float GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_texture_shadow_lod GL_INTEL_blackhole_render GL_MESA_framebuffer_flip_y GL_EXT_demote_to_helper_invocation GL_EXT_depth_clamp GL_EXT_texture_query_lod GL_MESA_bgra 
+00:00:04.069 [DEBUG] [GLES2] VS vec4 shader: 16 inst, 0 loops, 818 cycles, 0:0 spills:fills, 4 sends, compacted 256 to 224 bytes.
+
+00:00:04.178 [DEBUG] [GLES2] SIMD32 shader inefficient
+
+00:00:04.178 [DEBUG] [GLES2] FS SIMD8 shader: 11 inst, 0 loops, 800 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 176 to 128 bytes.
+
+00:00:04.178 [DEBUG] [GLES2] FS SIMD16 shader: 11 inst, 0 loops, 812 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 176 to 128 bytes.
+
+00:00:04.215 [DEBUG] [GLES2] SIMD32 shader inefficient
+
+00:00:04.215 [DEBUG] [GLES2] FS SIMD8 shader: 11 inst, 0 loops, 798 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 176 to 128 bytes.
+
+00:00:04.215 [DEBUG] [GLES2] FS SIMD16 shader: 11 inst, 0 loops, 808 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 176 to 128 bytes.
+
+00:00:04.235 [DEBUG] [GLES2] SIMD32 shader inefficient
+
+00:00:04.235 [DEBUG] [GLES2] FS SIMD8 shader: 11 inst, 0 loops, 800 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 176 to 128 bytes.
+
+00:00:04.235 [DEBUG] [GLES2] FS SIMD16 shader: 11 inst, 0 loops, 812 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 176 to 128 bytes.
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.332 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.339 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.339 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.339 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.339 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.339 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.339 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.340 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.340 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.340 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.340 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.340 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.340 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.340 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.348 [DEBUG] [GLES2] FS SIMD8 shader: 184 inst, 0 loops, 3542 cycles, 0:0 spills:fills, 14 sends, scheduled with mode top-down, Promoted 7 constants, compacted 2944 to 2384 bytes.
+
+00:00:04.349 [DEBUG] [GLES2] FS SIMD16 shader: 209 inst, 0 loops, 3727 cycles, 0:0 spills:fills, 14 sends, scheduled with mode top-down, Promoted 7 constants, compacted 3344 to 2784 bytes.
+
+00:00:04.377 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.378 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.387 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.397 [DEBUG] [GLES2] FS SIMD8 shader: 184 inst, 0 loops, 3540 cycles, 0:0 spills:fills, 14 sends, scheduled with mode top-down, Promoted 7 constants, compacted 2944 to 2400 bytes.
+
+00:00:04.397 [DEBUG] [GLES2] FS SIMD16 shader: 209 inst, 0 loops, 3722 cycles, 0:0 spills:fills, 14 sends, scheduled with mode top-down, Promoted 7 constants, compacted 3344 to 2800 bytes.
+
+00:00:04.408 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.408 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.408 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.409 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.414 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.420 [DEBUG] [GLES2] FS SIMD8 shader: 184 inst, 0 loops, 3542 cycles, 0:0 spills:fills, 14 sends, scheduled with mode top-down, Promoted 7 constants, compacted 2944 to 2384 bytes.
+
+00:00:04.420 [DEBUG] [GLES2] FS SIMD16 shader: 209 inst, 0 loops, 3727 cycles, 0:0 spills:fills, 14 sends, scheduled with mode top-down, Promoted 7 constants, compacted 3344 to 2784 bytes.
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.433 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.435 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.438 [DEBUG] [GLES2] FS SIMD8 shader: 106 inst, 0 loops, 2206 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1696 to 1296 bytes.
+
+00:00:04.438 [DEBUG] [GLES2] FS SIMD16 shader: 114 inst, 0 loops, 2308 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1824 to 1424 bytes.
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.460 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.462 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.462 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.462 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.462 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.463 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.465 [DEBUG] [GLES2] FS SIMD8 shader: 106 inst, 0 loops, 2204 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1696 to 1296 bytes.
+
+00:00:04.466 [DEBUG] [GLES2] FS SIMD16 shader: 114 inst, 0 loops, 2304 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1824 to 1424 bytes.
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.499 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.500 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.502 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.506 [DEBUG] [GLES2] FS SIMD8 shader: 106 inst, 0 loops, 2206 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1696 to 1296 bytes.
+
+00:00:04.506 [DEBUG] [GLES2] FS SIMD16 shader: 114 inst, 0 loops, 2308 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1824 to 1424 bytes.
+
+00:00:04.506 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader rounded_corners_rect at 0
+00:00:04.512 [DEBUG] [GLES2] VS vec4 shader: 16 inst, 0 loops, 818 cycles, 0:0 spills:fills, 4 sends, compacted 256 to 224 bytes.
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.514 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.516 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.519 [DEBUG] [GLES2] FS SIMD8 shader: 72 inst, 0 loops, 898 cycles, 0:0 spills:fills, 4 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1152 to 880 bytes.
+
+00:00:04.519 [DEBUG] [GLES2] FS SIMD16 shader: 80 inst, 0 loops, 980 cycles, 0:0 spills:fills, 4 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1280 to 1008 bytes.
+
+00:00:04.519 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader corner at 1
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.548 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.550 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.553 [DEBUG] [GLES2] FS SIMD8 shader: 88 inst, 0 loops, 1316 cycles, 0:0 spills:fills, 12 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1408 to 1200 bytes.
+
+00:00:04.553 [DEBUG] [GLES2] FS SIMD16 shader: 100 inst, 0 loops, 1361 cycles, 0:0 spills:fills, 12 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1600 to 1392 bytes.
+
+00:00:04.553 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader rect at 2
+00:00:04.580 [DEBUG] [GLES2] VS vec4 shader: 15 inst, 0 loops, 818 cycles, 0:0 spills:fills, 4 sends, compacted 240 to 208 bytes.
+
+00:00:04.583 [DEBUG] [GLES2] SIMD32 shader inefficient
+
+00:00:04.583 [DEBUG] [GLES2] FS SIMD8 shader: 14 inst, 0 loops, 232 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 224 to 160 bytes.
+
+00:00:04.583 [DEBUG] [GLES2] FS SIMD16 shader: 14 inst, 0 loops, 246 cycles, 0:0 spills:fills, 3 sends, scheduled with mode top-down, Promoted 0 constants, compacted 224 to 160 bytes.
+
+00:00:04.583 [DEBUG] [../src/wm/wm_renderer.c:232] Adding shader rounded_corners_border at 3
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.594 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.597 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.601 [DEBUG] [GLES2] FS SIMD8 shader: 116 inst, 0 loops, 1788 cycles, 0:0 spills:fills, 10 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1856 to 1424 bytes.
+
+00:00:04.601 [DEBUG] [GLES2] FS SIMD16 shader: 124 inst, 0 loops, 1902 cycles, 0:0 spills:fills, 10 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1984 to 1552 bytes.
+
+00:00:04.602 [DEBUG] [../src/wm/wm_renderer.c:114] Setting up quad shaders
+00:00:04.604 [DEBUG] [GLES2] VS vec4 shader: 6 inst, 0 loops, 22 cycles, 0:0 spills:fills, 1 sends, compacted 96 to 96 bytes.
+
+00:00:04.607 [DEBUG] [GLES2] SIMD32 shader inefficient
+
+00:00:04.607 [DEBUG] [GLES2] FS SIMD8 shader: 8 inst, 0 loops, 800 cycles, 0:0 spills:fills, 2 sends, scheduled with mode top-down, Promoted 0 constants, compacted 128 to 80 bytes.
+
+00:00:04.607 [DEBUG] [GLES2] FS SIMD16 shader: 8 inst, 0 loops, 812 cycles, 0:0 spills:fills, 2 sends, scheduled with mode top-down, Promoted 0 constants, compacted 128 to 80 bytes.
+
+00:00:04.620 [DEBUG] [GLES2] SIMD32 shader inefficient
+
+00:00:04.620 [DEBUG] [GLES2] FS SIMD8 shader: 46 inst, 0 loops, 3257 cycles, 0:0 spills:fills, 7 sends, scheduled with mode top-down, Promoted 1 constants, compacted 736 to 544 bytes.
+
+00:00:04.620 [DEBUG] [GLES2] FS SIMD16 shader: 54 inst, 0 loops, 3310 cycles, 0:0 spills:fills, 7 sends, scheduled with mode top-down, Promoted 1 constants, compacted 864 to 672 bytes.
+
+00:00:04.653 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.654 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:04.659 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:04.666 [DEBUG] [GLES2] FS SIMD8 shader: 167 inst, 0 loops, 7056 cycles, 0:0 spills:fills, 19 sends, scheduled with mode top-down, Promoted 1 constants, compacted 2672 to 2144 bytes.
+
+00:00:04.666 [DEBUG] [GLES2] FS SIMD16 shader: 201 inst, 0 loops, 7237 cycles, 0:0 spills:fills, 19 sends, scheduled with mode top-down, Promoted 1 constants, compacted 3216 to 2688 bytes.
+
+00:00:04.666 [DEBUG] [render/allocator/allocator.c:98] Trying to create gbm allocator
+00:00:04.677 [DEBUG] [render/allocator/gbm.c:203] Created GBM allocator with backend drm
+00:00:04.677 [DEBUG] [render/allocator/gbm.c:206] Using DRM node /dev/dri/card0
+00:00:04.691 [DEBUG] [../src/wm/wm_cursor.c:331] Loading cursor theme Sweet-cursors
+00:00:04.754 [DEBUG] [xcursor/wlr_xcursor.c:243] Loaded cursor theme 'default' at size 40 (13 available cursors)
+00:00:04.754 [INFO] [backend/headless/backend.c:69] Creating headless backend
+00:00:04.754 [DEBUG] [../src/wm/wm_server.c:598] Loading cursor theme Sweet-cursors
+00:00:04.754 [INFO] [../src/wm/wm.c:54] Running compositor on wayland display 'wayland-0'
+00:00:04.754 [INFO] [../src/wm/wm.c:57] Starting backend...
+00:00:04.754 [DEBUG] [backend/libinput/backend.c:87] Starting libinput backend
+00:00:05.050 [DEBUG] [backend/libinput/events.c:107] Added Power Button [0:1]
+00:00:05.050 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.051 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:05.278 [DEBUG] [backend/libinput/events.c:107] Added Video Bus [0:6]
+00:00:05.278 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.278 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:05.283 [DEBUG] [backend/libinput/events.c:107] Added Video Bus [0:6]
+00:00:05.283 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.283 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:05.288 [DEBUG] [backend/libinput/events.c:107] Added Lid Switch [0:5]
+00:00:05.288 [DEBUG] [backend/libinput/switch.c:23] Created switch for device Lid Switch
+00:00:05.288 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.288 [DEBUG] [../src/wm/wm_seat.c:160] Unsupported input device
+00:00:05.288 [DEBUG] [backend/libinput/events.c:107] Added Sleep Button [0:3]
+00:00:05.288 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.288 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:05.293 [DEBUG] [backend/libinput/events.c:107] Added USB2.0 0.3M UVC WebCam: USB2.0  [1266:45497]
+00:00:05.293 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.293 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:05.298 [DEBUG] [backend/libinput/events.c:107] Added Asus WMI hotkeys [0:0]
+00:00:05.298 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.298 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:05.303 [DEBUG] [backend/libinput/events.c:107] Added AT Translated Set 2 keyboard [1:1]
+00:00:05.303 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.303 [DEBUG] [../src/wm/wm_seat.c:138] New keyboard
+00:00:05.308 [DEBUG] [backend/libinput/events.c:107] Added SynPS/2 Synaptics TouchPad [2:7]
+00:00:05.308 [DEBUG] [../src/wm/wm_server.c:55] Server: New input
+00:00:05.308 [DEBUG] [../src/wm/wm_seat.c:148] New pointer
+00:00:05.308 [DEBUG] [backend/libinput/backend.c:133] libinput successfully initialized
+00:00:05.308 [INFO] [backend/drm/drm.c:1185] Scanning DRM connectors on /dev/dri/card0
+00:00:05.308 [INFO] [backend/drm/drm.c:1251] Found connector 'LVDS-1'
+00:00:05.308 [INFO] [backend/drm/drm.c:1287] 'LVDS-1' connected
+00:00:05.308 [DEBUG] [backend/drm/drm.c:1288] Current CRTC: 45
+00:00:05.308 [INFO] [backend/drm/drm.c:1298] Physical size: 290x160
+00:00:05.308 [INFO] [backend/drm/drm.c:1338] Detected modes:
+00:00:05.308 [INFO] [backend/drm/drm.c:1360]   1366x768@59973 (preferred)
+00:00:05.309 [INFO] [backend/drm/drm.c:1251] Found connector 'VGA-1'
+00:00:05.311 [INFO] [backend/drm/drm.c:1251] Found connector 'HDMI-A-1'
+00:00:05.311 [INFO] [backend/drm/drm.c:1251] Found connector 'DP-1'
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1047] Reallocating CRTCs
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1058] State before reallocation:
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1064]   'LVDS-1' crtc=0 status=1 desired_enabled=1
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1064]   'VGA-1' crtc=-1 status=0 desired_enabled=0
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1064]   'HDMI-A-1' crtc=-1 status=0 desired_enabled=0
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1064]   'DP-1' crtc=-1 status=0 desired_enabled=0
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1115] State after reallocation:
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1122]   'LVDS-1' crtc=0 status=1 desired_enabled=1
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1122]   'VGA-1' crtc=-1 status=0 desired_enabled=0
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1122]   'HDMI-A-1' crtc=-1 status=0 desired_enabled=0
+00:00:05.311 [DEBUG] [backend/drm/drm.c:1122]   'DP-1' crtc=-1 status=0 desired_enabled=0
+00:00:05.311 [INFO] [backend/drm/drm.c:1412] connector LVDS-1: Requesting modeset
+00:00:05.311 [DEBUG] [../src/wm/wm_server.c:87] Server: New output
+00:00:05.311 [INFO] [../src/wm/wm_output.c:293] New output: Unknown: 0x17D8 (Unknown 0x17D8 0x00000000 (LVDS-1)) - use name: 'LVDS-1' to configure
+00:00:05.311 [INFO] [../src/wm/wm_output.c:219] Output: Output supports 1366x768(59973) (Preferred)
+00:00:05.311 [INFO] [../src/wm/wm_output.c:242] Output: Setting mode: 1366x768(59973)
+00:00:05.311 [DEBUG] [backend/drm/drm.c:492] connector LVDS-1: Can't enable an output without a buffer
+00:00:05.311 [DEBUG] [types/output/render.c:192] Attaching empty buffer to output for modeset
+00:00:05.311 [DEBUG] [types/output/render.c:73] Choosing primary buffer format 0x34325258 for output 'LVDS-1'
+00:00:05.311 [DEBUG] [render/swapchain.c:105] Allocating new swapchain buffer
+00:00:05.312 [DEBUG] [render/allocator/gbm.c:140] Allocated 1366x768 GBM buffer (format 0x34325258, modifier 0x100000000000001)
+00:00:05.312 [DEBUG] [render/gles2/renderer.c:142] Created GL FBO for buffer 1366x768
+00:00:05.374 [INFO] [backend/drm/drm.c:708] connector LVDS-1: Modesetting with '1366x768@59973mHz'
+00:00:05.389 [INFO] [../src/wm/wm_output.c:281] Output: Setting scale to 1.000000
+00:00:05.411 [INFO] [../src/wm/wm_layout.c:68] Layout: Placing automatically
+00:00:05.412 [DEBUG] [../src/wm/wm_layout.c:31] Following master output: 0
+[DEBUG] pywm.py:335 2022-05-24 05:04:35: PyWM layout change:
+[DEBUG] pywm.py:337 2022-05-24 05:04:35:   Output(LVDS-1) key=0 with 1366x768, scale 1.000000 at 0, 0
+[DEBUG] layout.py:398 2022-05-24 05:04:35: Setup of newm workspaces
+[DEBUG] layout.py:400 2022-05-24 05:04:35:   Workspace[0] at 0, 0 --> 1366, 768
+00:00:09.203 [DEBUG] [../src/wm/wm.c:149] 
+TIMER[callback_layout_change        ] X: 3791.24ms (3791.24ms max),  0.10Hz
+00:00:09.203 [INFO] [backend/headless/backend.c:17] Starting headless backend
+00:00:09.203 [INFO] [../src/wm/wm.c:75] Main...
+00:00:09.203 [DEBUG] [render/swapchain.c:105] Allocating new swapchain buffer
+00:00:09.204 [DEBUG] [render/allocator/gbm.c:140] Allocated 1366x768 GBM buffer (format 0x34325258, modifier 0x100000000000001)
+00:00:09.204 [DEBUG] [render/gles2/renderer.c:142] Created GL FBO for buffer 1366x768
+00:00:09.204 [DEBUG] [../src/wm/wm_renderer.c:510] Initialising renderer buffers for output: 1366x768
+00:00:09.208 [DEBUG] [../src/wm/wm_output.c:173] 
+TIMER[render                        ] .:    3.96ms (   3.96ms max),  0.10Hz
+00:00:09.209 [DEBUG] [../src/py/_pywmmodule.c:145] 
+TIMER[callback_update_pywm          ]  :    0.13ms (   0.13ms max),  0.10Hz
+00:00:09.209 [DEBUG] [../src/py/_pywmmodule.c:150] 
+TIMER[callback_update_views         ]  :    0.00ms (   0.00ms max),  0.10Hz
+00:00:09.210 [DEBUG] [../src/py/_pywm_widget.c:212] 
+TIMER[callback_update_widgets_single]  :    0.45ms (   0.45ms max),  0.10Hz
+00:00:09.210 [DEBUG] [../src/py/_pywmmodule.c:156] 
+TIMER[callback_update_widgets       ]  :    0.50ms (   0.50ms max),  0.10Hz
+00:00:09.210 [DEBUG] [../src/wm/wm.c:374] 
+TIMER[callback_update               ]  :    0.71ms (   0.71ms max),  0.10Hz
+00:00:09.265 [DEBUG] [../src/wm/wm_output.c:153] Output 0 dropped frame (30.00ms)
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.266 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.268 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.270 [DEBUG] [GLES2] FS SIMD8 shader: 106 inst, 0 loops, 2206 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1696 to 1296 bytes.
+
+00:00:09.270 [DEBUG] [GLES2] FS SIMD16 shader: 114 inst, 0 loops, 2308 cycles, 0:0 spills:fills, 11 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1824 to 1424 bytes.
+
+00:00:09.270 [DEBUG] [GLES2] Recompiling fragment shader for program GLSL33: 
+
+00:00:09.270 [DEBUG] [GLES2]   input slots valid 1->0
+
+00:00:09.301 [DEBUG] [../src/wm/wm_output.c:153] Output 0 dropped frame (36.00ms)
+00:00:09.380 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.380 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.380 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.380 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.380 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.381 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Fragment discard/demote not implemented in SIMD32 mode.
+
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.386 [DEBUG] [GLES2] Shader dispatch width limited to SIMD16: Non-uniform control flow unsupported in SIMD32 mode.
+
+00:00:09.392 [DEBUG] [GLES2] FS SIMD8 shader: 116 inst, 0 loops, 1788 cycles, 0:0 spills:fills, 10 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1856 to 1424 bytes.
+
+00:00:09.393 [DEBUG] [GLES2] FS SIMD16 shader: 124 inst, 0 loops, 1902 cycles, 0:0 spills:fills, 10 sends, scheduled with mode top-down, Promoted 0 constants, compacted 1984 to 1552 bytes.
+
+00:00:09.393 [DEBUG] [GLES2] Recompiling fragment shader for program GLSL51: 
+
+00:00:09.393 [DEBUG] [GLES2]   input slots valid 1->0
+
+00:00:09.402 [DEBUG] [../src/wm/wm_output.c:153] Output 0 dropped frame (33.00ms)
+00:00:12.286 [DEBUG] [../src/wm/wm.c:188] 
+TIMER[callback_motion               ]  :    0.19ms (   0.19ms max),  0.10Hz
+00:00:12.328 [DEBUG] [../src/wm/wm_output.c:153] Output 0 dropped frame (30.00ms)
+00:00:17.498 [DEBUG] [../src/wm/wm.c:162] 
+TIMER[callback_key                  ]  :    0.11ms (   0.11ms max),  0.10Hz
+[DEBUG] layout.py:791 2022-05-24 05:04:47: Resetting gesture
+00:00:17.499 [DEBUG] [../src/wm/wm.c:175] 
+TIMER[callback_modifiers            ]  :    0.49ms (   0.49ms max),  0.10Hz
+[DEBUG] layout.py:791 2022-05-24 05:04:48: Resetting gesture
+[DEBUG] layout.py:791 2022-05-24 05:04:48: Resetting gesture
+[DEBUG] layout.py:791 2022-05-24 05:04:49: Resetting gesture
+00:00:19.261 [DEBUG] [../src/wm/wm_output.c:173] 
+TIMER[render                        ] X:    0.61ms (  29.02ms max), 20.50Hz
+00:00:22.513 [DEBUG] [../src/wm/wm.c:188] 
+TIMER[callback_motion               ]  :    0.15ms (   0.41ms max), 42.90Hz
+00:00:31.953 [DEBUG] [../src/wm/wm_output.c:173] 
+TIMER[render                        ]  :    0.37ms (   0.44ms max), 27.10Hz
+00:00:32.522 [DEBUG] [../src/wm/wm.c:188] 
+TIMER[callback_motion               ]  :    0.15ms (   0.20ms max), 19.90Hz
+00:00:33.223 [DEBUG] [../src/wm/wm.c:202] 
+TIMER[callback_button               ]  :    0.13ms (   0.13ms max),  0.10Hz
+00:00:38.383 [DEBUG] [../src/wm/wm.c:162] 
+TIMER[callback_key                  ]  :    0.13ms (   0.19ms max),  0.80Hz
+[DEBUG] layout.py:791 2022-05-24 05:05:08: Resetting gesture
+00:00:38.383 [DEBUG] [../src/wm/wm.c:175] 
+TIMER[callback_modifiers            ]  :    0.29ms (   0.53ms max),  0.80Hz
+[DEBUG] layout.py:791 2022-05-24 05:05:10: Resetting gesture
+[DEBUG] layout.py:791 2022-05-24 05:05:10: Resetting gesture
+[DEBUG] layout.py:791 2022-05-24 05:05:12: Resetting gesture
+[DEBUG] layout.py:791 2022-05-24 05:05:13: Resetting gesture
+00:00:43.942 [DEBUG] [backend/libinput/events.c:226] Removing AT Translated Set 2 keyboard [1:1]
+00:00:43.943 [DEBUG] [backend/libinput/events.c:226] Removing Asus WMI hotkeys [0:0]
+00:00:43.943 [DEBUG] [backend/libinput/events.c:226] Removing USB2.0 0.3M UVC WebCam: USB2.0  [1266:45497]
+00:00:43.944 [DEBUG] [backend/libinput/events.c:226] Removing Sleep Button [0:3]
+00:00:43.944 [DEBUG] [backend/libinput/events.c:226] Removing Video Bus [0:6]
+00:00:43.945 [DEBUG] [backend/libinput/events.c:226] Removing Lid Switch [0:5]
+00:00:43.945 [DEBUG] [backend/libinput/events.c:226] Removing Power Button [0:1]
+00:00:44.010 [DEBUG] [backend/libinput/events.c:226] Removing SynPS/2 Synaptics TouchPad [2:7]
+00:00:44.010 [DEBUG] [backend/libinput/events.c:226] Removing Video Bus [0:6]
+00:00:48.635 [INFO] [libseat] [libseat/backend/logind.c:316] Disabling seat
+00:00:48.635 [INFO] [backend/drm/backend.c:124] DRM fd paused
