@@ -1,0 +1,565 @@
+[ahmad bonsai]$ ninja -C build
+ninja: Entering directory `build'
+[1/17] Compiling C object bonsai/bonsai.p/input.c.o
+FAILED: bonsai/bonsai.p/input.c.o 
+cc -Ibonsai/bonsai.p -Ibonsai -I../bonsai -I../include -I../include/protocols -I/u
+sr/local/include -I/usr/local/include/libdrm -I/usr/include/pixman-1 -I/usr/includ
+e/libevdev-1.0/ -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-lin
+ux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/includ
+e/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -
+Wextra -std=c17 -O0 -g -DWLR_USE_UNSTABLE -Wno-unused-parameter -Wno-unused-result
+ -Wno-missing-braces -Wundef -Wvla '-DBSI_PREFIX="/home/ahmad/.local"' '-DBSI_DATA
+DIR="share"' '-DBSI_SYSCONFDIR="etc"' '-DBSI_USERCONFDIR=".config"' -DBSI_DEBUG -M
+D -MQ bonsai/bonsai.p/input.c.o -MF bonsai/bonsai.p/input.c.o.d -o bonsai/bonsai.p
+/input.c.o -c ../bonsai/input.c
+In file included from ../bonsai/input.c:17:
+/usr/include/wlr/types/wlr_subcompositor.h:23:8: error: redefinition of ‘struct wl
+r_subsurface_parent_state’
+   23 | struct wlr_subsurface_parent_state {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/wlr/types/wlr_seat.h:17,
+                 from /usr/include/wlr/types/wlr_idle.h:13,
+                 from ../bonsai/input.c:13:
+/usr/include/wlr/types/wlr_surface.h:170:8: note: originally defined here
+  170 | struct wlr_subsurface_parent_state {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../bonsai/input.c:17:
+/usr/include/wlr/types/wlr_subcompositor.h:28:8: error: redefinition of ‘struct wl
+r_subsurface’
+   28 | struct wlr_subsurface {
+      |        ^~~~~~~~~~~~~~
+In file included from /usr/include/wlr/types/wlr_seat.h:17,
+                 from /usr/include/wlr/types/wlr_idle.h:13,
+                 from ../bonsai/input.c:13:
+/usr/include/wlr/types/wlr_surface.h:175:8: note: originally defined here
+  175 | struct wlr_subsurface {
+      |        ^~~~~~~~~~~~~~
+In file included from /usr/include/wlr/xwayland.h:15,
+                 from ../include/bonsai/desktop/view.h:9,
+                 from ../include/bonsai/desktop/workspace.h:10,
+                 from ../include/bonsai/output.h:12,
+                 from ../include/bonsai/desktop/layers.h:10,
+                 from ../bonsai/input.c:23:
+/usr/include/wlr/types/wlr_compositor.h:17:8: error: redefinition of ‘struct wlr_s
+ubcompositor’
+   17 | struct wlr_subcompositor {
+      |        ^~~~~~~~~~~~~~~~~
+In file included from ../bonsai/input.c:17:
+/usr/include/wlr/types/wlr_subcompositor.h:56:8: note: originally defined here
+   56 | struct wlr_subcompositor {
+      |        ^~~~~~~~~~~~~~~~~
+In file included from ../bonsai/input.c:28:
+../include/bonsai/input/keyboard.h:21:34: warning: ‘struct wlr_keyboard_key_event’
+ declared inside parameter list will not be visible outside of this definition or 
+declaration
+   21 |                           struct wlr_keyboard_key_event* event);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~
+../bonsai/input.c: In function ‘handle_motion’:
+../bonsai/input.c:123:46: error: invalid use of undefined type ‘struct wlr_pointer
+_motion_event’
+  123 |         device->cursor, device->device, event->delta_x, event->delta_y);
+      |                                              ^~
+../bonsai/input.c:123:62: error: invalid use of undefined type ‘struct wlr_pointer
+_motion_event’
+  123 |         device->cursor, device->device, event->delta_x, event->delta_y);
+      |                                                              ^~
+../bonsai/input.c: In function ‘handle_motion_absolute’:
+../bonsai/input.c:145:50: error: invalid use of undefined type ‘struct wlr_pointer
+_motion_absolute_event’
+  145 |         server->wlr_cursor, device->device, event->x, event->y);
+      |                                                  ^~
+../bonsai/input.c:145:60: error: invalid use of undefined type ‘struct wlr_pointer
+_motion_absolute_event’
+  145 |         server->wlr_cursor, device->device, event->x, event->y);
+      |                                                            ^~
+../bonsai/input.c: In function ‘handle_button’:
+../bonsai/input.c:174:20: error: invalid use of undefined type ‘struct wlr_pointer
+_button_event’
+  174 |         seat, event->time_msec, event->button, event->state);
+      |                    ^~
+../bonsai/input.c:174:38: error: invalid use of undefined type ‘struct wlr_pointer
+_button_event’
+  174 |         seat, event->time_msec, event->button, event->state);
+      |                                      ^~
+../bonsai/input.c:174:53: error: invalid use of undefined type ‘struct wlr_pointer
+_button_event’
+  174 |         seat, event->time_msec, event->button, event->state);
+      |                                                     ^~
+../bonsai/input.c:178:18: error: invalid use of undefined type ‘struct wlr_pointer
+_button_event’
+  178 |     switch (event->state) {
+      |                  ^~
+../bonsai/input.c: In function ‘handle_axis’:
+../bonsai/input.c:241:39: error: invalid use of undefined type ‘struct wlr_pointer
+_axis_event’
+  241 |                                  event->time_msec,
+      |                                       ^~
+../bonsai/input.c:242:39: error: invalid use of undefined type ‘struct wlr_pointer
+_axis_event’
+  242 |                                  event->orientation,
+      |                                       ^~
+../bonsai/input.c:243:39: error: invalid use of undefined type ‘struct wlr_pointer
+_axis_event’
+  243 |                                  event->delta,
+      |                                       ^~
+../bonsai/input.c:244:39: error: invalid use of undefined type ‘struct wlr_pointer
+_axis_event’
+  244 |                                  event->delta_discrete,
+      |                                       ^~
+../bonsai/input.c:245:39: error: invalid use of undefined type ‘struct wlr_pointer
+_axis_event’
+  245 |                                  event->source);
+      |                                       ^~
+In file included from ../bonsai/input.c:29:
+../bonsai/input.c: In function ‘handle_swipe_begin’:
+../bonsai/input.c:277:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_begin_event’
+  277 |           event->time_msec,
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c:278:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_begin_event’
+  278 |           event->fingers);
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c:281:41: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_begin_event’
+  281 |     server->cursor.swipe_fingers = event->fingers;
+      |                                         ^~
+../bonsai/input.c:282:40: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_begin_event’
+  282 |     server->cursor.swipe_timest = event->time_msec;
+      |                                        ^~
+In file included from ../bonsai/input.c:29:
+../bonsai/input.c: In function ‘handle_swipe_update’:
+../bonsai/input.c:300:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_update_event’
+  300 |           event->time_msec,
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c:301:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_update_event’
+  301 |           event->fingers,
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c:302:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_update_event’
+  302 |           event->dx,
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c:303:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_update_event’
+  303 |           event->dy);
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c: In function ‘handle_swipe_end’:
+../bonsai/input.c:324:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_end_event’
+  324 |           event->time_msec,
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c:325:16: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_end_event’
+  325 |           event->cancelled);
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input.c:328:43: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_end_event’
+  328 |     server->cursor.swipe_cancelled = event->cancelled;
+      |                                           ^~
+../bonsai/input.c:329:40: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_end_event’
+  329 |     server->cursor.swipe_timest = event->time_msec;
+      |                                        ^~
+../bonsai/input.c:331:14: error: invalid use of undefined type ‘struct wlr_pointer
+_swipe_end_event’
+  331 |     if (event->cancelled) {
+      |              ^~
+../bonsai/input.c: In function ‘handle_pinch_begin’:
+../bonsai/input.c:386:43: warning: unused variable ‘event’ [-Wunused-variable]
+  386 |     struct wlr_pointer_pinch_begin_event* event = data;
+      |                                           ^~~~~
+../bonsai/input.c: In function ‘handle_pinch_update’:
+../bonsai/input.c:402:44: warning: unused variable ‘event’ [-Wunused-variable]
+  402 |     struct wlr_pointer_pinch_update_event* event = data;
+      |                                            ^~~~~
+../bonsai/input.c:401:22: warning: unused variable ‘seat’ [-Wunused-variable]
+  401 |     struct wlr_seat* seat = server->wlr_seat;
+      |                      ^~~~
+../bonsai/input.c: In function ‘handle_pinch_end’:
+../bonsai/input.c:418:41: warning: unused variable ‘event’ [-Wunused-variable]
+  418 |     struct wlr_pointer_pinch_end_event* event = data;
+      |                                         ^~~~~
+../bonsai/input.c:417:22: warning: unused variable ‘seat’ [-Wunused-variable]
+  417 |     struct wlr_seat* seat = server->wlr_seat;
+      |                      ^~~~
+../bonsai/input.c: In function ‘handle_hold_begin’:
+../bonsai/input.c:434:42: warning: unused variable ‘event’ [-Wunused-variable]
+  434 |     struct wlr_pointer_hold_begin_event* event = data;
+      |                                          ^~~~~
+../bonsai/input.c: In function ‘handle_hold_end’:
+../bonsai/input.c:452:40: warning: unused variable ‘event’ [-Wunused-variable]
+  452 |     struct wlr_pointer_hold_end_event* event = data;
+      |                                        ^~~~~
+../bonsai/input.c:451:22: warning: unused variable ‘seat’ [-Wunused-variable]
+  451 |     struct wlr_seat* seat = server->wlr_seat;
+      |                      ^~~~
+../bonsai/input.c: In function ‘handle_key’:
+../bonsai/input.c:466:44: warning: passing argument 2 of ‘keyboard_keybinds_proces
+s’ from incompatible pointer type [-Wincompatible-pointer-types]
+  466 |     if (!keyboard_keybinds_process(device, event)) {
+      |                                            ^~~~~
+      |                                            |
+      |                                            struct wlr_keyboard_key_event 
+In file included from ../bonsai/input.c:28:
+../include/bonsai/input/keyboard.h:21:58: note: expected ‘struct wlr_keyboard_key_
+event *’ but argument is of type ‘struct wlr_keyboard_key_event *’
+   21 |                           struct wlr_keyboard_key_event* event);
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../bonsai/input.c:470:51: warning: passing argument 2 of ‘wlr_seat_set_keyboard’ f
+rom incompatible pointer type [-Wincompatible-pointer-types]
+  470 |         wlr_seat_set_keyboard(seat, device->device->keyboard);
+      |                                     ~~~~~~~~~~~~~~^~~~~~~~~~
+      |                                                   |
+      |                                                   struct wlr_keyboard *
+In file included from /usr/include/wlr/types/wlr_idle.h:13,
+                 from ../bonsai/input.c:13:
+/usr/include/wlr/types/wlr_seat.h:476:76: note: expected ‘struct wlr_input_device 
+*’ but argument is of type ‘struct wlr_keyboard *’
+  476 | void wlr_seat_set_keyboard(struct wlr_seat *seat, struct wlr_input_device 
+*dev);
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~~~
+~^~~
+../bonsai/input.c:474:24: error: invalid use of undefined type ‘struct wlr_keyboar
+d_key_event’
+  474 |             seat, event->time_msec, event->keycode, event->state);
+      |                        ^~
+../bonsai/input.c:474:42: error: invalid use of undefined type ‘struct wlr_keyboar
+d_key_event’
+  474 |             seat, event->time_msec, event->keycode, event->state);
+      |                                          ^~
+../bonsai/input.c:474:58: error: invalid use of undefined type ‘struct wlr_keyboar
+d_key_event’
+  474 |             seat, event->time_msec, event->keycode, event->state);
+      |                                                          ^~
+../bonsai/input.c: In function ‘handle_modifiers’:
+../bonsai/input.c:492:36: warning: passing argument 2 of ‘wlr_seat_set_keyboard’ f
+rom incompatible pointer type [-Wincompatible-pointer-types]
+  492 |     wlr_seat_set_keyboard(seat, dev->keyboard);
+      |                                 ~~~^~~~~~~~~~
+      |                                    |
+      |                                    struct wlr_keyboard *
+In file included from /usr/include/wlr/types/wlr_idle.h:13,
+                 from ../bonsai/input.c:13:
+/usr/include/wlr/types/wlr_seat.h:476:76: note: expected ‘struct wlr_input_device 
+*’ but argument is of type ‘struct wlr_keyboard *’
+  476 | void wlr_seat_set_keyboard(struct wlr_seat *seat, struct wlr_input_device 
+*dev);
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~~~
+~^~~
+../bonsai/input.c: In function ‘handle_new_input’:
+../bonsai/input.c:746:67: warning: passing argument 2 of ‘wlr_seat_set_keyboard’ f
+rom incompatible pointer type [-Wincompatible-pointer-types]
+  746 |             wlr_seat_set_keyboard(server->wlr_seat, device->device->keyboa
+rd);
+      |                                                     ~~~~~~~~~~~~~~^~~~~~~~
+~~
+      |                                                                   |
+      |                                                                   struct w
+lr_keyboard *
+In file included from /usr/include/wlr/types/wlr_idle.h:13,
+                 from ../bonsai/input.c:13:
+/usr/include/wlr/types/wlr_seat.h:476:76: note: expected ‘struct wlr_input_device 
+*’ but argument is of type ‘struct wlr_keyboard *’
+  476 | void wlr_seat_set_keyboard(struct wlr_seat *seat, struct wlr_input_device 
+*dev);
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~~~
+~^~~
+[2/17] Compiling C object bonsai/bonsai.p/util.c.o
+../bonsai/util.c: In function ‘util_tryexec’:
+../bonsai/util.c:48:5: warning: ISO C90 forbids variable length array ‘aargp’ [-Wv
+la]
+   48 |     char* aargp[len_argp]; // NOLINT
+      |     ^~~~
+[3/17] Compiling C object bonsai/bonsai.p/server.c.o
+FAILED: bonsai/bonsai.p/server.c.o 
+cc -Ibonsai/bonsai.p -Ibonsai -I../bonsai -I../include -I../include/protocols -I/u
+sr/local/include -I/usr/local/include/libdrm -I/usr/include/pixman-1 -I/usr/includ
+e/libevdev-1.0/ -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-lin
+ux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/includ
+e/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -
+Wextra -std=c17 -O0 -g -DWLR_USE_UNSTABLE -Wno-unused-parameter -Wno-unused-result
+ -Wno-missing-braces -Wundef -Wvla '-DBSI_PREFIX="/home/ahmad/.local"' '-DBSI_DATA
+DIR="share"' '-DBSI_SYSCONFDIR="etc"' '-DBSI_USERCONFDIR=".config"' -DBSI_DEBUG -M
+D -MQ bonsai/bonsai.p/server.c.o -MF bonsai/bonsai.p/server.c.o.d -o bonsai/bonsai
+.p/server.c.o -c ../bonsai/server.c
+In file included from ../bonsai/server.c:37:
+/usr/include/wlr/types/wlr_subcompositor.h:23:8: error: redefinition of ‘struct wl
+r_subsurface_parent_state’
+   23 | struct wlr_subsurface_parent_state {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/wlr/types/wlr_seat.h:17,
+                 from /usr/include/wlr/types/wlr_data_control_v1.h:13,
+                 from ../bonsai/server.c:20:
+/usr/include/wlr/types/wlr_surface.h:170:8: note: originally defined here
+  170 | struct wlr_subsurface_parent_state {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../bonsai/server.c:37:
+/usr/include/wlr/types/wlr_subcompositor.h:28:8: error: redefinition of ‘struct wl
+r_subsurface’
+   28 | struct wlr_subsurface {
+      |        ^~~~~~~~~~~~~~
+In file included from /usr/include/wlr/types/wlr_seat.h:17,
+                 from /usr/include/wlr/types/wlr_data_control_v1.h:13,
+                 from ../bonsai/server.c:20:
+/usr/include/wlr/types/wlr_surface.h:175:8: note: originally defined here
+  175 | struct wlr_subsurface {
+      |        ^~~~~~~~~~~~~~
+In file included from ../bonsai/server.c:37:
+/usr/include/wlr/types/wlr_subcompositor.h:56:8: error: redefinition of ‘struct wl
+r_subcompositor’
+   56 | struct wlr_subcompositor {
+      |        ^~~~~~~~~~~~~~~~~
+In file included from ../bonsai/server.c:18:
+/usr/include/wlr/types/wlr_compositor.h:17:8: note: originally defined here
+   17 | struct wlr_subcompositor {
+      |        ^~~~~~~~~~~~~~~~~
+In file included from ../bonsai/server.c:37:
+/usr/include/wlr/types/wlr_subcompositor.h:72:24: error: conflicting types for ‘wl
+r_subsurface_from_wlr_surface’; have ‘struct wlr_subsurface *(struct wlr_surface *
+)’
+   72 | struct wlr_subsurface *wlr_subsurface_from_wlr_surface(
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../bonsai/server.c:18:
+/usr/include/wlr/types/wlr_compositor.h:44:24: note: previous declaration of ‘wlr_
+subsurface_from_wlr_surface’ with type ‘struct wlr_subsurface *(struct wlr_surface
+ *)’
+   44 | struct wlr_subsurface *wlr_subsurface_from_wlr_surface(
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../bonsai/server.c: In function ‘server_init’:
+../bonsai/server.c:122:29: error: too many arguments to function ‘wlr_xdg_shell_cr
+eate’
+  122 |     server->wlr_xdg_shell = wlr_xdg_shell_create(server->wl_display, 2);
+      |                             ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/wlr/types/wlr_xdg_decoration_v1.h:5,
+                 from ../bonsai/server.c:39:
+/usr/include/wlr/types/wlr_xdg_shell.h:258:23: note: declared here
+  258 | struct wlr_xdg_shell *wlr_xdg_shell_create(struct wl_display *display);
+      |                       ^~~~~~~~~~~~~~~~~~~~
+[4/17] Compiling C object bonsai/bonsai.p/input_cursor.c.o
+FAILED: bonsai/bonsai.p/input_cursor.c.o 
+cc -Ibonsai/bonsai.p -Ibonsai -I../bonsai -I../include -I../include/protocols -I/u
+sr/local/include -I/usr/local/include/libdrm -I/usr/include/pixman-1 -I/usr/includ
+e/libevdev-1.0/ -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-lin
+ux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/includ
+e/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -
+Wextra -std=c17 -O0 -g -DWLR_USE_UNSTABLE -Wno-unused-parameter -Wno-unused-result
+ -Wno-missing-braces -Wundef -Wvla '-DBSI_PREFIX="/home/ahmad/.local"' '-DBSI_DATA
+DIR="share"' '-DBSI_SYSCONFDIR="etc"' '-DBSI_USERCONFDIR=".config"' -DBSI_DEBUG -M
+D -MQ bonsai/bonsai.p/input_cursor.c.o -MF bonsai/bonsai.p/input_cursor.c.o.d -o b
+onsai/bonsai.p/input_cursor.c.o -c ../bonsai/input/cursor.c
+../bonsai/input/cursor.c: In function ‘cursor_scene_data_at’:
+../bonsai/input/cursor.c:54:45: error: ‘struct wlr_scene’ has no member named ‘tre
+e’
+   54 |         wlr_scene_node_at(&server->wlr_scene->tree.node,
+      |                                             ^~
+../bonsai/input/cursor.c:65:45: warning: implicit declaration of function ‘wlr_sce
+ne_buffer_from_node’; did you mean ‘wlr_scene_surface_from_node’? [-Wimplicit-func
+tion-declaration]
+   65 |     struct wlr_scene_buffer* scene_buffer = wlr_scene_buffer_from_node(nod
+e);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                             wlr_scene_surface_from_node
+../bonsai/input/cursor.c:65:45: warning: initialization of ‘struct wlr_scene_buffe
+r *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+../bonsai/input/cursor.c:67:9: warning: implicit declaration of function ‘wlr_scen
+e_surface_from_buffer’; did you mean ‘wlr_scene_surface_from_node’? [-Wimplicit-fu
+nction-declaration]
+   67 |         wlr_scene_surface_from_buffer(scene_buffer);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         wlr_scene_surface_from_node
+../bonsai/input/cursor.c:67:9: warning: initialization of ‘struct wlr_scene_surfac
+e *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+../bonsai/input/cursor.c:79:29: error: ‘struct wlr_scene_node’ has no member named
+ ‘node’
+   79 |         node = &node->parent->node;
+      |                             ^~
+../bonsai/input/cursor.c: In function ‘cursor_process_motion’:
+../bonsai/input/cursor.c:119:36: error: invalid use of undefined type ‘struct wlr_
+pointer_motion_event’
+  119 |                 server->wlr_seat, e->time_msec, sx, sy);
+      |                                    ^~
+In file included from ../bonsai/input/cursor.c:17:
+../bonsai/input/cursor.c: In function ‘cursor_process_view_move’:
+../bonsai/input/cursor.c:156:16: error: invalid use of undefined type ‘struct wlr_
+pointer_motion_event’
+  156 |           event->delta_x,
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input/cursor.c:157:16: error: invalid use of undefined type ‘struct wlr_
+pointer_motion_event’
+  157 |           event->delta_y);
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input/cursor.c: In function ‘cursor_process_view_resize’:
+../bonsai/input/cursor.c:216:39: warning: passing argument 1 of ‘wlr_xdg_toplevel_
+set_resizing’ from incompatible pointer type [-Wincompatible-pointer-types]
+  216 |     wlr_xdg_toplevel_set_resizing(view->wlr_xdg_toplevel, true);
+      |                                   ~~~~^~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       struct wlr_xdg_toplevel *
+In file included from /usr/include/wlr/types/wlr_xdg_decoration_v1.h:5,
+                 from ../bonsai/input/cursor.c:8:
+/usr/include/wlr/types/wlr_xdg_shell.h:310:64: note: expected ‘struct wlr_xdg_surf
+ace *’ but argument is of type ‘struct wlr_xdg_toplevel *’
+  310 | uint32_t wlr_xdg_toplevel_set_resizing(struct wlr_xdg_surface *surface,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../bonsai/input/cursor.c:220:13: warning: passing argument 1 of ‘wlr_xdg_toplevel_
+set_size’ from incompatible pointer type [-Wincompatible-pointer-types]
+  220 |         view->wlr_xdg_toplevel, new_right - new_left, new_bottom - new_top
+);
+      |         ~~~~^~~~~~~~~~~~~~~~~~
+      |             |
+      |             struct wlr_xdg_toplevel *
+In file included from /usr/include/wlr/types/wlr_xdg_decoration_v1.h:5,
+                 from ../bonsai/input/cursor.c:8:
+/usr/include/wlr/types/wlr_xdg_shell.h:282:60: note: expected ‘struct wlr_xdg_surf
+ace *’ but argument is of type ‘struct wlr_xdg_toplevel *’
+  282 | uint32_t wlr_xdg_toplevel_set_size(struct wlr_xdg_surface *surface,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../bonsai/input/cursor.c:222:39: warning: passing argument 1 of ‘wlr_xdg_toplevel_
+set_resizing’ from incompatible pointer type [-Wincompatible-pointer-types]
+  222 |     wlr_xdg_toplevel_set_resizing(view->wlr_xdg_toplevel, false);
+      |                                   ~~~~^~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       struct wlr_xdg_toplevel *
+In file included from /usr/include/wlr/types/wlr_xdg_decoration_v1.h:5,
+                 from ../bonsai/input/cursor.c:8:
+/usr/include/wlr/types/wlr_xdg_shell.h:310:64: note: expected ‘struct wlr_xdg_surf
+ace *’ but argument is of type ‘struct wlr_xdg_toplevel *’
+  310 | uint32_t wlr_xdg_toplevel_set_resizing(struct wlr_xdg_surface *surface,
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../bonsai/input/cursor.c:17:
+../bonsai/input/cursor.c:225:16: error: invalid use of undefined type ‘struct wlr_
+pointer_motion_event’
+  225 |           event->delta_x,
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input/cursor.c:226:16: error: invalid use of undefined type ‘struct wlr_
+pointer_motion_event’
+  226 |           event->delta_y);
+      |                ^~
+../include/bonsai/log.h:15:16: note: in definition of macro ‘debug’
+   15 |              ##__VA_ARGS__)
+      |                ^~~~~~~~~~~
+../bonsai/input/cursor.c: In function ‘cursor_process_swipe’:
+../bonsai/input/cursor.c:243:19: error: invalid use of undefined type ‘struct wlr_
+pointer_swipe_update_event’
+  243 |     if (fabs(event->dx) > fabs(event->dy)) {
+      |                   ^~
+../bonsai/input/cursor.c:243:37: error: invalid use of undefined type ‘struct wlr_
+pointer_swipe_update_event’
+  243 |     if (fabs(event->dx) > fabs(event->dy)) {
+      |                                     ^~
+../bonsai/input/cursor.c:245:41: error: invalid use of undefined type ‘struct wlr_
+pointer_swipe_update_event’
+  245 |         server->cursor.swipe_dx += event->dx;
+      |                                         ^~
+../bonsai/input/cursor.c:246:26: error: invalid use of undefined type ‘struct wlr_
+pointer_swipe_update_event’
+  246 |     } else if (fabs(event->dy) > fabs(event->dx)) {
+      |                          ^~
+../bonsai/input/cursor.c:246:44: error: invalid use of undefined type ‘struct wlr_
+pointer_swipe_update_event’
+  246 |     } else if (fabs(event->dy) > fabs(event->dx)) {
+      |                                            ^~
+../bonsai/input/cursor.c:248:41: error: invalid use of undefined type ‘struct wlr_
+pointer_swipe_update_event’
+  248 |         server->cursor.swipe_dy += event->dy;
+      |                                         ^~
+[6/17] Compiling C object bonsai/bonsai.p/output.c.o
+FAILED: bonsai/bonsai.p/output.c.o 
+cc -Ibonsai/bonsai.p -Ibonsai -I../bonsai -I../include -I../include/protocols -I/u
+sr/local/include -I/usr/local/include/libdrm -I/usr/include/pixman-1 -I/usr/includ
+e/libevdev-1.0/ -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-lin
+ux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/includ
+e/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -
+Wextra -std=c17 -O0 -g -DWLR_USE_UNSTABLE -Wno-unused-parameter -Wno-unused-result
+ -Wno-missing-braces -Wundef -Wvla '-DBSI_PREFIX="/home/ahmad/.local"' '-DBSI_DATA
+DIR="share"' '-DBSI_SYSCONFDIR="etc"' '-DBSI_USERCONFDIR=".config"' -DBSI_DEBUG -M
+D -MQ bonsai/bonsai.p/output.c.o -MF bonsai/bonsai.p/output.c.o.d -o bonsai/bonsai
+.p/output.c.o -c ../bonsai/output.c
+../bonsai/output.c: In function ‘output_layer_arrange’:
+../bonsai/output.c:240:9: warning: implicit declaration of function ‘wlr_scene_lay
+er_surface_v1_configure’; did you mean ‘wlr_layer_surface_v1_configure’? [-Wimplic
+it-function-declaration]
+  240 |         wlr_scene_layer_surface_v1_configure(
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         wlr_layer_surface_v1_configure
+../bonsai/output.c: In function ‘output_layers_arrange’:
+../bonsai/output.c:272:17: error: too many arguments to function ‘wlr_output_layou
+t_get_box’
+  272 |                 wlr_output_layout_get_box(output->server->wlr_output_layou
+t,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/wlr/types/wlr_cursor.h:14,
+                 from ../bonsai/output.c:11:
+/usr/include/wlr/types/wlr_output_layout.h:112:17: note: declared here
+  112 | struct wlr_box *wlr_output_layout_get_box(
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../bonsai/output.c:277:42: error: invalid use of undefined type ‘struct wlr_scene_
+layer_surface_v1’
+  277 |                     &toplevel->scene_node->tree->node, &lx, &ly);
+      |                                          ^~
+../bonsai/output.c:278:66: error: invalid use of undefined type ‘struct wlr_scene_
+layer_surface_v1’
+  278 |                 wlr_scene_node_set_position(&toplevel->scene_node->tree->n
+ode,
+      |                                                                  ^~
+../bonsai/output.c:297:46: error: invalid use of undefined type ‘struct wlr_scene_
+layer_surface_v1’
+  297 |                         &toplevel->scene_node->tree->node);
+      |                                              ^~
+../bonsai/output.c:305:46: error: invalid use of undefined type ‘struct wlr_scene_
+layer_surface_v1’
+  305 |                         &toplevel->scene_node->tree->node);
+      |                                              ^~
+../bonsai/output.c: In function ‘handle_new_output’:
+../bonsai/output.c:578:46: warning: unused variable ‘config_head’ [-Wunused-variab
+le]
+  578 |     struct wlr_output_configuration_head_v1* config_head =
+      |                                              ^~~~~~~~~~~
+../bonsai/output.c: In function ‘handle_output_layout_change’:
+../bonsai/output.c:611:9: error: too many arguments to function ‘wlr_output_layout
+_get_box’
+  611 |         wlr_output_layout_get_box(
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/wlr/types/wlr_cursor.h:14,
+                 from ../bonsai/output.c:11:
+/usr/include/wlr/types/wlr_output_layout.h:112:17: note: declared here
+  112 | struct wlr_box *wlr_output_layout_get_box(
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+[ahmad bonsai]$ 
