@@ -1,0 +1,110 @@
+[ahmad ~]$ ~/.local/bin/bonsai
+00:00:00.000 [bonsai][config.c:95] XDG_CONFIG_HOME not set
+00:00:00.000 [bonsai][config.c:118] No config exists in location '/home/ahmad/.config/bonsai'
+00:00:00.000 [bonsai][config.c:139] Found config '/home/ahmad/.config/bonsai/config'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=3, tokens=[wallpaper,/home/ahmad/.local/share/backgrounds/bonsai/Wallpaper-Default.jpg] }
+00:00:00.000 [bonsai][atom.c:390] Wallpaper is '/home/ahmad/.local/share/backgrounds/bonsai/Wallpaper-Default.jpg'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=5, tokens=[workspace,count,max,3] }
+00:00:00.000 [bonsai][atom.c:361] Workspace count is 3
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,keyboard,"wayland-keyboard-seat0",repeat_info,20,600] }
+00:00:00.000 [bonsai][util.c:197] Tokens { len=3, tokens=[20,600] }
+00:00:00.000 [bonsai][atom.c:300] Keyboard repeat info for device 'wayland-keyboard-seat0' is { rate=20, delay=600 }
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,keyboard,"wayland-keyboard-seat0",model,pc105] }
+00:00:00.000 [bonsai][atom.c:309] Keyboard model for device 'wayland-keyboard-seat0' is 'pc105'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,keyboard,"wayland-keyboard-seat0",layout_toggle,grp:win_space_toggle] }
+00:00:00.000 [bonsai][atom.c:274] Keyboard layout toggle for device 'wayland-keyboard-seat0' is 'grp:win_space_toggle'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,keyboard,"wayland-keyboard-seat0",layout,us] }
+00:00:00.000 [bonsai][atom.c:267] Added keyboard layouts 'wayland-keyboard-seat0' for device 'us'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,pointer,"wayland-pointer-seat0",tap,yes] }
+00:00:00.000 [bonsai][atom.c:245] Pointer tap is 1 for device 'wayland-pointer-seat0'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,pointer,"wayland-pointer-seat0",scroll_natural,yes] }
+00:00:00.000 [bonsai][atom.c:237] Pointer natural_scroll is 1 for device 'wayland-pointer-seat0'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,pointer,"wayland-pointer-seat0",accel_profile,flat] }
+00:00:00.000 [bonsai][atom.c:229] Pointer accel_profile is 1 for device 'wayland-pointer-seat0'
+00:00:00.000 [bonsai][util.c:197] Tokens { len=6, tokens=[input,pointer,"wayland-pointer-seat0",accel_speed,0.0] }
+00:00:00.000 [bonsai][atom.c:210] Pointer accel_speed is 0.00 for device 'wayland-pointer-seat0'
+00:00:00.000 [bonsai][config.c:196] Applied 11 config commands
+00:00:00.000 [backend/wayland/backend.c:532] Creating wayland backend
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wl_shm v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wl_drm v2
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwp_linux_dmabuf_v1 v4
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wl_compositor v4
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wl_subcompositor v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwlr_export_dmabuf_manager_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwlr_screencopy_manager_v1 v3
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwlr_data_control_manager_v1 v2
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wl_data_device_manager v3
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwlr_gamma_control_manager_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwp_primary_selection_device_manager_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wp_viewporter v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: xdg_activation_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zxdg_output_manager_v1 v3
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: org_kde_kwin_idle v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwp_idle_inhibit_manager_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwlr_layer_shell_v1 v4
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: xdg_wm_base v2
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwlr_input_inhibit_manager_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: org_kde_kwin_server_decoration_manager v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zxdg_decoration_manager_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwp_virtual_keyboard_manager_v1 v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wl_seat v7
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: zwlr_output_manager_v1 v2
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wp_presentation v1
+00:00:00.001 [backend/wayland/backend.c:343] Remote wayland global: wl_output v4
+00:00:00.001 [backend/wayland/seat.c:303] seat 'seat0' offering pointer
+00:00:00.001 [backend/wayland/seat.c:314] seat 'seat0' offering keyboard
+00:00:00.002 [backend/wayland/backend.c:614] Opening DRM render node /dev/dri/renderD128
+00:00:00.004 [render/egl.c:180] Supported EGL client extensions: EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_EXT_platform_base EGL_KHR_clien
+t_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_EXT_platform_device EGL_EXT_platform_wayland EGL_KHR_platform_wayland EGL_EXT_platform_x11 EGL_KHR_
+platform_x11 EGL_MESA_platform_xcb EGL_MESA_platform_gbm EGL_KHR_platform_gbm EGL_MESA_platform_surfaceless
+00:00:00.005 [render/egl.c:437] Using EGL device /dev/dri/card0
+00:00:00.045 [render/egl.c:326] Using EGL 1.5
+00:00:00.045 [render/egl.c:327] Supported EGL display extensions: EGL_ANDROID_blob_cache EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dm
+a_buf_import_modifiers EGL_IMG_context_priority EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_K
+HR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image E
+GL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context E
+GL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display 
+00:00:00.045 [render/egl.c:329] Supported EGL device extensions: EGL_EXT_device_drm EGL_EXT_device_drm_render_node
+00:00:00.045 [render/egl.c:331] EGL vendor: Mesa Project
+00:00:00.045 [render/egl.c:158] Supported DMA-BUF formats: AB4H XB4H AR30 XR30 AB30 AR24 AB24 XR24 XB24 AR15 RG16 R8   R16  GR88 GR32 YUV9 YU11 YU12 YU16 YU24 YVU9 YV11
+ YV12 YV16 YV24 NV12 P010 P012 P016 NV16 AYUV XYUV Y410 Y412 Y416 YUYV UYVY Y210 Y212 Y216 
+00:00:00.045 [render/egl.c:159] EGL DMA-BUF format modifiers supported
+00:00:00.046 [render/egl.c:388] Obtained high priority context
+00:00:00.046 [render/egl.c:486] Using EGL_PLATFORM_DEVICE_EXT
+00:00:00.049 [render/gles2/renderer.c:729] Creating GLES2 renderer
+00:00:00.049 [render/gles2/renderer.c:730] Using OpenGL ES 3.0 Mesa 22.1.3
+00:00:00.049 [render/gles2/renderer.c:731] GL vendor: Intel
+00:00:00.049 [render/gles2/renderer.c:732] GL renderer: Mesa Intel(R) HD Graphics 3000 (SNB GT2)
+00:00:00.049 [render/gles2/renderer.c:733] Supported GLES2 extensions: GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_com
+pression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_e
+lement_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_
+texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_draw_instanced GL_EXT_texture_sRGB_d
+ecode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_t
+exture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_NV_pack_subimage GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_E
+GL_sync GL_OES_vertex_array_object GL_ANGLE_pack_reverse_row_order GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL
+_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_
+buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_NV_pixel_buffer_object GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_
+context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_group_vote GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EX
+T_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_texture_border_clam
+p GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_texture_border_clamp
+ GL_EXT_blend_func_extended GL_EXT_float_blend GL_EXT_texture_sRGB_R8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_EXT_c
+lip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_clip_control GL_EXT_color_buffer_half_float G
+L_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_texture_mirror_clamp_to_edge GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_EXT_shader_framebuffer_fetch_non_cohe
+rent GL_EXT_texture_shadow_lod GL_INTEL_blackhole_render GL_MESA_framebuffer_flip_y GL_EXT_demote_to_helper_invocation GL_EXT_depth_clamp GL_EXT_texture_query_lod GL_ME
+SA_bgra 
+00:00:00.058 [render/allocator/allocator.c:107] Trying to create gbm allocator
+00:00:00.063 [render/allocator/gbm.c:204] Created GBM allocator with backend drm
+00:00:00.063 [render/allocator/gbm.c:207] Using DRM node /dev/dri/renderD128
+00:00:00.099 [xcursor/wlr_xcursor.c:243] Loaded cursor theme 'default' at size 24 (52 available cursors)
+00:00:00.099 [types/wlr_idle.c:247] idle manager created
+00:00:00.099 [wayland] unable to lock lockfile /run/user/1000/wayland-0.lock, maybe another compositor is running
+00:00:00.099 [bonsai][server.c:252] Created server socket 'wayland-1'
+00:00:00.099 [bonsai][util.c:55] Trying to exec '/usr/bin/dbus-update-activation-environment'
+00:00:00.100 [backend/wayland/backend.c:417] Starting Wayland backend
+00:00:00.100 [bonsai][input.c:524] Got event new_input from wlr_backend
+00:00:00.100 [bonsai][input.c:704] Matched config for input device 'wayland-keyboard-seat0'
+00:00:00.100 [bonsai][input.c:704] Matched config for input device 'wayland-keyboard-seat0'
+00:00:00.100 [bonsai][input.c:704] Matched config for input device 'wayland-keyboard-seat0'
+00:00:00.100 [bonsai][input.c:704] Matched config for input device 'wayland-keyboard-seat0'
+Segmentation fault (core dumped)
+[ahmad ~]$ 
