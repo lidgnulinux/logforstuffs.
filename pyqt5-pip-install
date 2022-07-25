@@ -1,0 +1,69 @@
+[ahmad@LIDG ~]$ ~/.local/bin/pip3.10 install pyqt5
+Collecting pyqt5
+  Downloading PyQt5-5.15.7.tar.gz (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 1.1 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [32 lines of output]
+      Querying qmake about your Qt installation...
+      Traceback (most recent call last):
+        File "/home/ahmad/.local/lib/python3.10/site-packages/pip/_vendor/pep517/in_
+process/_in_process.py", line 156, in prepare_metadata_for_build_wheel
+          hook = backend.prepare_metadata_for_build_wheel
+      AttributeError: module 'sipbuild.api' has no attribute 'prepare_metadata_for_b
+uild_wheel'
+      
+      During handling of the above exception, another exception occurred:
+      
+      Traceback (most recent call last):
+        File "/home/ahmad/.local/lib/python3.10/site-packages/pip/_vendor/pep517/in_
+process/_in_process.py", line 363, in <module>
+          main()
+        File "/home/ahmad/.local/lib/python3.10/site-packages/pip/_vendor/pep517/in_
+process/_in_process.py", line 345, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+        File "/home/ahmad/.local/lib/python3.10/site-packages/pip/_vendor/pep517/in_
+process/_in_process.py", line 160, in prepare_metadata_for_build_wheel
+          whl_basename = backend.build_wheel(metadata_directory, config_settings)
+        File "/tmp/pip-build-env-5_t9c5s5/overlay/lib/python3.10/site-packages/sipbu
+ild/api.py", line 46, in build_wheel
+          project = AbstractProject.bootstrap('wheel',
+        File "/tmp/pip-build-env-5_t9c5s5/overlay/lib/python3.10/site-packages/sipbu
+ild/abstract_project.py", line 87, in bootstrap
+          project.setup(pyproject, tool, tool_description)
+        File "/tmp/pip-build-env-5_t9c5s5/overlay/lib/python3.10/site-packages/sipbu
+ild/project.py", line 584, in setup
+          self.apply_user_defaults(tool)
+        File "/tmp/pip-install-5ksreqe0/pyqt5_5047e70e558642f68aa637afc7270605/proje
+ct.py", line 69, in apply_user_defaults
+          super().apply_user_defaults(tool)
+        File "/tmp/pip-build-env-5_t9c5s5/overlay/lib/python3.10/site-packages/pyqtb
+uild/project.py", line 70, in apply_user_defaults
+          super().apply_user_defaults(tool)
+        File "/tmp/pip-build-env-5_t9c5s5/overlay/lib/python3.10/site-packages/sipbu
+ild/project.py", line 236, in apply_user_defaults
+          self.builder.apply_user_defaults(tool)
+        File "/tmp/pip-build-env-5_t9c5s5/overlay/lib/python3.10/site-packages/pyqtb
+uild/builder.py", line 76, in apply_user_defaults
+          self._get_qt_configuration()
+        File "/tmp/pip-build-env-5_t9c5s5/overlay/lib/python3.10/site-packages/pyqtb
+uild/builder.py", line 511, in _get_qt_configuration
+          self.qt_version_str = self.qt_configuration['QT_VERSION']
+      KeyError: 'QT_VERSION'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pi
+p.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+[ahmad@LIDG ~]$ 
