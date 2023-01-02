@@ -1,0 +1,145 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   2592  1748 ?        Ss   16:00   0:00 init [3]
+root         2  0.0  0.0      0     0 ?        S    16:00   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   16:00   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   16:00   0:00 [rcu_par_gp]
+root         5  0.0  0.0      0     0 ?        I<   16:00   0:00 [slub_flushwq]
+root         6  0.0  0.0      0     0 ?        I<   16:00   0:00 [netns]
+root         8  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/0:0H-events_highpri]
+root        10  0.0  0.0      0     0 ?        I<   16:00   0:00 [mm_percpu_wq]
+root        11  0.0  0.0      0     0 ?        I    16:00   0:00 [rcu_tasks_kthread]
+root        12  0.0  0.0      0     0 ?        I    16:00   0:00 [rcu_tasks_rude_kthread]
+root        13  0.0  0.0      0     0 ?        I    16:00   0:00 [rcu_tasks_trace_kthread]
+root        14  0.0  0.0      0     0 ?        S    16:00   0:00 [ksoftirqd/0]
+root        15  0.0  0.0      0     0 ?        I    16:00   0:05 [rcu_preempt]
+root        16  0.0  0.0      0     0 ?        S    16:00   0:00 [migration/0]
+root        17  0.0  0.0      0     0 ?        S    16:00   0:00 [cpuhp/0]
+root        18  0.0  0.0      0     0 ?        S    16:00   0:00 [cpuhp/1]
+root        19  0.0  0.0      0     0 ?        S    16:00   0:00 [migration/1]
+root        20  0.0  0.0      0     0 ?        S    16:00   0:00 [ksoftirqd/1]
+root        22  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/1:0H-events_highpri]
+root        23  0.0  0.0      0     0 ?        S    16:00   0:00 [cpuhp/2]
+root        24  0.0  0.0      0     0 ?        S    16:00   0:00 [migration/2]
+root        25  0.0  0.0      0     0 ?        S    16:00   0:00 [ksoftirqd/2]
+root        27  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/2:0H-kblockd]
+root        28  0.0  0.0      0     0 ?        S    16:00   0:00 [cpuhp/3]
+root        29  0.0  0.0      0     0 ?        S    16:00   0:00 [migration/3]
+root        30  0.0  0.0      0     0 ?        S    16:00   0:00 [ksoftirqd/3]
+root        32  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/3:0H-kblockd]
+root        33  0.0  0.0      0     0 ?        S    16:00   0:00 [kdevtmpfs]
+root        34  0.0  0.0      0     0 ?        I<   16:00   0:00 [inet_frag_wq]
+root        35  0.0  0.0      0     0 ?        S    16:00   0:00 [kauditd]
+root        37  0.0  0.0      0     0 ?        S    16:00   0:00 [oom_reaper]
+root        39  0.0  0.0      0     0 ?        I<   16:00   0:00 [writeback]
+root        41  0.0  0.0      0     0 ?        S    16:00   0:00 [kcompactd0]
+root        42  0.0  0.0      0     0 ?        SN   16:00   0:00 [ksmd]
+root        43  0.0  0.0      0     0 ?        SN   16:00   0:00 [khugepaged]
+root        44  0.0  0.0      0     0 ?        I<   16:00   0:00 [cryptd]
+root        45  0.0  0.0      0     0 ?        I<   16:00   0:00 [kintegrityd]
+root        46  0.0  0.0      0     0 ?        I<   16:00   0:00 [kblockd]
+root        47  0.0  0.0      0     0 ?        I<   16:00   0:00 [blkcg_punt_bio]
+root        49  0.0  0.0      0     0 ?        I<   16:00   0:00 [tpm_dev_wq]
+root        50  0.0  0.0      0     0 ?        I<   16:00   0:00 [ata_sff]
+root        51  0.0  0.0      0     0 ?        I<   16:00   0:00 [md]
+root        52  0.0  0.0      0     0 ?        I<   16:00   0:00 [edac-poller]
+root        53  0.0  0.0      0     0 ?        I<   16:00   0:00 [devfreq_wq]
+root        54  0.0  0.0      0     0 ?        S    16:00   0:00 [watchdogd]
+root        55  0.0  0.0      0     0 ?        I<   16:00   0:00 [rpciod]
+root        56  0.0  0.0      0     0 ?        I<   16:00   0:00 [xprtiod]
+root        57  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/0:1H-kblockd]
+root        61  0.0  0.0      0     0 ?        S    16:00   0:00 [kswapd0]
+root        62  0.0  0.0      0     0 ?        I<   16:00   0:00 [nfsiod]
+root        74  0.0  0.0      0     0 ?        I<   16:00   0:00 [kthrotld]
+root        81  0.0  0.0      0     0 ?        S    16:00   0:00 [irq/29-pciehp]
+root        82  0.0  0.0      0     0 ?        I<   16:00   0:00 [nvme-wq]
+root        83  0.0  0.0      0     0 ?        I<   16:00   0:00 [nvme-reset-wq]
+root        84  0.0  0.0      0     0 ?        I<   16:00   0:00 [nvme-delete-wq]
+root        85  0.0  0.0      0     0 ?        S    16:00   0:00 [scsi_eh_0]
+root        86  0.0  0.0      0     0 ?        I<   16:00   0:00 [scsi_tmf_0]
+root        87  0.0  0.0      0     0 ?        S    16:00   0:00 [scsi_eh_1]
+root        88  0.0  0.0      0     0 ?        I<   16:00   0:00 [scsi_tmf_1]
+root        89  0.0  0.0      0     0 ?        S    16:00   0:00 [scsi_eh_2]
+root        90  0.0  0.0      0     0 ?        I<   16:00   0:00 [scsi_tmf_2]
+root        91  0.0  0.0      0     0 ?        S    16:00   0:00 [scsi_eh_3]
+root        92  0.0  0.0      0     0 ?        I<   16:00   0:00 [scsi_tmf_3]
+root        93  0.0  0.0      0     0 ?        S    16:00   0:00 [scsi_eh_4]
+root        94  0.0  0.0      0     0 ?        I<   16:00   0:00 [scsi_tmf_4]
+root        95  0.0  0.0      0     0 ?        S    16:00   0:00 [scsi_eh_5]
+root        96  0.0  0.0      0     0 ?        I<   16:00   0:00 [scsi_tmf_5]
+root       106  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/2:1H-events_highpri]
+root       109  0.0  0.0      0     0 ?        I<   16:00   0:00 [raid5wq]
+root       111  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/1:1H-events_highpri]
+root       112  0.0  0.0      0     0 ?        I<   16:00   0:00 [kstrp]
+root       114  0.0  0.0      0     0 ?        I<   16:00   0:00 [zswap-shrink]
+root       115  0.0  0.0      0     0 ?        D<   16:00   0:07 [kworker/u33:0+i915_flip]
+root       229  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/3:1H-events_highpri]
+root       287  0.0  0.0      0     0 ?        S    16:00   0:00 [jbd2/sda1-8]
+root       288  0.0  0.0      0     0 ?        I<   16:00   0:00 [ext4-rsv-conver]
+root       682  0.0  0.1  21348  4600 ?        Ss   16:00   0:01 /sbin/udevd --daemon
+root       702  0.0  0.0      0     0 ?        I<   16:00   0:00 [acpi_thermal_pm]
+root       704  0.0  0.0      0     0 ?        S    16:00   0:00 [napi/eth%d-257]
+root       705  0.0  0.0      0     0 ?        S    16:00   0:00 [napi/eth%d-258]
+root       706  0.0  0.0      0     0 ?        S    16:00   0:00 [irq/32-mei_me]
+root       707  0.0  0.0      0     0 ?        I<   16:00   0:00 [cfg80211]
+root       711  0.0  0.0      0     0 ?        I<   16:00   0:00 [led_workqueue]
+root       727  0.0  0.0      0     0 ?        S    16:00   0:00 [card0-crtc0]
+root       728  0.0  0.0      0     0 ?        S    16:00   0:00 [card0-crtc1]
+root       734  0.0  0.0      0     0 ?        I<   16:00   0:00 [kworker/u33:1-hci0]
+root       841  0.0  0.0   3732  2316 ?        Ss   16:00   0:01 /sbin/mount.ntfs /dev/sda2 /mnt/B34E -v -o rw,nosuid,nodev,nofail
+root       871  0.0  0.0   2612  2028 ?        Ss   16:00   0:00 /usr/sbin/syslogd -s
+root       873  0.0  0.0      0     0 ?        I<   16:00   0:00 [mld]
+root       874  0.0  0.0      0     0 ?        I<   16:00   0:00 [ipv6_addrconf]
+root       962  0.0  0.1   8344  4388 ?        Ss   16:00   0:00 /sbin/haveged -w 1024 -v 1 -p /var/run/haveged.pid
+dhcpcd     974  0.0  0.0   2948  2232 ?        S    16:00   0:00 dhcpcd: [launcher]
+dhcpcd     987  0.0  0.0   3140  1668 ?        S    16:00   0:00 dhcpcd: eth0 [ip4] [ip6]
+dhcpcd     988  0.0  0.0   3144  1512 ?        S    16:00   0:00 dhcpcd: wlan0 [ip4] [ip6]
+root       989  0.0  0.0   2972  2060 ?        S    16:00   0:00 dhcpcd: [privileged proxy] eth0 [ip4] [ip6]
+dhcpcd     990  0.0  0.0   2948   276 ?        S    16:00   0:00 dhcpcd: [network proxy] eth0 [ip4] [ip6]
+root       991  0.0  0.0   2968  2088 ?        S    16:00   0:00 dhcpcd: [privileged proxy] wlan0 [ip4] [ip6]
+dhcpcd     992  0.0  0.0   2948   276 ?        S    16:00   0:00 dhcpcd: [control proxy] eth0 [ip4] [ip6]
+dhcpcd     993  0.0  0.0   2948   268 ?        S    16:00   0:00 dhcpcd: [network proxy] wlan0 [ip4] [ip6]
+dhcpcd     994  0.0  0.0   2948   268 ?        S    16:00   0:00 dhcpcd: [control proxy] wlan0 [ip4] [ip6]
+message+  1024  0.0  0.0   5132  2880 ?        Ss   16:00   0:00 /usr/bin/dbus-daemon --system
+root      1037  0.0  0.0  37200  3516 ?        S    16:00   0:00 elogind-daemon
+root      1060  0.0  0.0   2600  1680 ?        Ss   16:00   0:01 /usr/sbin/acpid
+root      1087  0.0  0.0   2624  1736 ?        Ss   16:00   0:00 /usr/sbin/crond -l notice
+root      1092  0.0  0.0   6148  3576 ?        Ss   16:00   0:00 login -- lidg
+root      1093  0.0  0.0   3132  1884 tty2     Ss+  16:00   0:00 /sbin/agetty 38400 tty2 linux
+root      1094  0.0  0.0   3132  1748 tty3     Ss+  16:00   0:00 /sbin/agetty 38400 tty3 linux
+root      1095  0.0  0.0   3132  1900 tty4     Ss+  16:00   0:00 /sbin/agetty 38400 tty4 linux
+root      1096  0.0  0.0   3132  1984 tty5     Ss+  16:00   0:00 /sbin/agetty 38400 tty5 linux
+root      1097  0.0  0.0   3132  1972 tty6     Ss+  16:00   0:00 /sbin/agetty 38400 tty6 linux
+lidg      1106  0.0  0.1   9616  6256 tty1     Ss   16:00   0:00 -bash
+lidg      1122  0.0  0.0   4976   252 ?        Ss   16:00   0:00 /usr/bin/dbus-daemon --syslog --fork --print-pid 4 --print-address 6 --session
+lidg      1131  0.0  0.0   3648  1196 tty1     S+   16:01   0:00 dbus-run-session /usr/local/bin/sway -c /home/lidg/.config/sway-1.8.conf
+lidg      1132  0.0  0.0   4980  3044 tty1     S+   16:01   0:00 dbus-daemon --nofork --print-address 4 --session
+lidg      1133  1.5  2.1 532188 82604 tty1     Sl+  16:01   2:23 /usr/local/bin/sway -c /home/lidg/.config/sway-1.8.conf
+polkitd   1136  0.0  0.5 2908552 20032 ?       Sl   16:01   0:00 /usr/lib/polkit-1/polkitd --no-debug
+lidg      1159  0.0  0.2  19504  9732 tty1     S+   16:01   0:00 swaybg -o * -i /usr/share/wallpapers/Next/contents/images_dark/1366x768.png -m fill
+lidg      1161  0.0  0.3 179668 15036 tty1     S+   16:01   0:01 swaybar -b bar-0
+lidg      1167  0.0  0.0   2584  1740 tty1     S    16:01   0:00 i3blocks -c /home/lidg/.i3blocks.conf
+root      1205  0.0  0.1  10852  5244 ?        Ss   16:01   0:00 wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+dhcpcd    1229  0.0  0.0   2968   280 ?        S    16:01   0:00 dhcpcd: [network proxy] fe80::1d54:d46d:4139:7661
+dhcpcd    1230  0.0  0.0   2968   280 ?        S    16:01   0:00 dhcpcd: [BPF ARP] wlan0 192.168.1.101
+dhcpcd    1253  0.0  0.0   2968   280 ?        S    16:01   0:00 dhcpcd: [network proxy] 192.168.1.101
+lidg      2199  0.3  0.6 287636 26676 ?        Sl   16:05   0:30 /usr/bin/pulseaudio --start --log-target=syslog
+lidg      2202  0.0  0.2  89416  8168 ?        Sl   16:05   0:00 /usr/libexec/pulse/gsettings-helper
+root      8598  0.1  0.1 328480  5192 ?        Ssl  17:57   0:03 adb -L tcp:5037 fork-server server --reply-fd 7
+root      9358  0.0  0.0      0     0 ?        I    18:17   0:00 [kworker/1:0-events]
+lidg      9391  0.7  0.3  16772 13816 ?        S    18:19   0:07 havoc
+lidg      9392  0.0  0.1   9708  6396 pts/0    Ss   18:19   0:00 bash
+root      9582  0.0  0.0      0     0 ?        I    18:21   0:00 [kworker/2:2-events]
+root      9593  0.0  0.0      0     0 ?        I    18:22   0:00 [kworker/u32:1-events_unbound]
+root      9604  0.0  0.0      0     0 ?        I    18:22   0:00 [kworker/3:0-events]
+root      9630  0.0  0.0      0     0 ?        I    18:24   0:00 [kworker/0:1-events]
+root      9631  0.0  0.0      0     0 ?        I    18:24   0:00 [kworker/1:2-events]
+root     11783  0.1  0.0      0     0 ?        I    18:28   0:00 [kworker/3:2-events]
+root     11786  0.0  0.0      0     0 ?        I    18:28   0:00 [kworker/u32:0-events_unbound]
+root     11817  0.0  0.0      0     0 ?        I    18:29   0:00 [kworker/2:1-events]
+root     11872  0.0  0.0      0     0 ?        I    18:30   0:00 [kworker/0:0-events]
+root     11898  0.0  0.0      0     0 ?        I    18:31   0:00 [kworker/1:1-events]
+root     11976  0.0  0.0      0     0 ?        I    18:34   0:00 [kworker/2:0-events]
+root     11988  0.2  0.0      0     0 ?        I    18:34   0:00 [kworker/3:1-events]
+root     12000  0.0  0.0      0     0 ?        I    18:34   0:00 [kworker/u32:2-phy0]
+root     12068  0.0  0.0      0     0 ?        I    18:35   0:00 [kworker/0:2-events]
+lidg     12085  0.0  0.0   4732  2692 pts/0    R+   18:36   0:00 ps aux
